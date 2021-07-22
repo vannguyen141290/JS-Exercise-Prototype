@@ -104,7 +104,10 @@ Car.prototype.fill = function (gallons){
 }
 
 // Car.prototype.drive = function (distance){
-
+//   this.odometer += distance;
+//   console.log(`this car drove total ${this.odometer}`);
+//   this.tank -= distance/this.milesPerGallon;
+//   console.log(`The gallons left in the tank is ${this.tank}`);
 // }
 
 /*
@@ -129,9 +132,10 @@ Baby.prototype.play = function (){
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
   1. The first principle is Global Binding. When this is used in a global context, the object is the window or the console of the browser
-  2. Second is Implicit Binding: 
+  2. Second is Implicit Binding: When a function is called, this refers to the object left of the dot.
   3. Third is New Binding. 'This' is used in a constructor function. 'This' refers to the specific instances of the object that is created and returned by the constructor function.
-  4. Last is explicit Binding: 
+  4. Last is explicit Binding: whenever call, apply, bind method is used, 'this' is explicited defined. "call" invokes the function immidiately, passing arguements one by one. "apply" invokes the function immidiately as well but passing in arguments as an array. "bind" pass in arguments 1 by 1 but not invokes immidiately.
+
 */
 
 
